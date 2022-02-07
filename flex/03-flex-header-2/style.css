@@ -12,8 +12,44 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
-}
 
+  /*  1- Add Flexbox
+      2- Add padding of 8px for all element
+      3- remaining space : maximum between child */
+
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+
+
+}
+ul {
+  list-style-type: none;
+
+
+  /*  1- Add flexbox
+      2- margin and padding 0 to omit default margin and padding of ul
+      3- 16 px between each sub item (<li></li>
+     */
+  
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+}
+.left,.right{
+
+
+  /* 2 Child of class header
+  
+    1- Add flexbox
+    2- Align item following main axis (because row direction by default)
+    3- 16 px between each item ( between class=logo and class=links*/
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -29,6 +65,7 @@ body {
   font-style: italic;
 }
 
+
 button {
   border: none;
   border-radius: 8px;
@@ -43,6 +80,3 @@ a {
   color: rebeccapurple;
 }
 
-ul {
-  list-style-type: none;
-}
