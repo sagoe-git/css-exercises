@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+
+  /* All text in this page with be centered */
+  text-align: center;
 }
 
 img {
@@ -10,6 +13,27 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+
+
+  /* Just adding a margin at the bottom of the title */
+  margin-bottom: 32px;
+}
+
+
+.container{
+
+  /* Horizontally centered (main axis)
+     52 px between each item*/
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  
+}
+
+.info{
+
+  /* 200px max for a tile (text + photo) */
+  max-width: 200px;
 }
 
 /* do not edit this footer */
