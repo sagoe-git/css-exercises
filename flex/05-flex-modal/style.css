@@ -20,8 +20,39 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+
+  /*  1- Add a padding at the whole modal
+      2- Flex between direct children : Icon and Container
+      3- 12px between Icon and Container  */
+  padding: 12px;
+  display: flex;
+  gap: 12px;
+  
 }
 
+.header{
+
+  /*  This class container the header(text) and the closing button
+      1- Flex
+      2- Maximize space between text and icon (text left, icon right)
+      3- Align 2 items cross axis
+      4- Font size for the text*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 8px;
+
+
+}
+.text{
+
+  /* Just adding margin between the text and buttons */
+  margin-bottom: 12px;
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,6 +64,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -46,6 +79,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* Important to not shrink the icon */
+  flex-shrink: 0;
 }
 
 button {
